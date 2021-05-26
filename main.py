@@ -24,19 +24,6 @@ bt_help = Bthelper()
 def start(message):
       bot.send_message(message.chat.id, "Salam👋 Xoşgəldiniz :) \n Botdan istifadə etmək üçün '/' işarəsinə klikləyə bilərsiz. \n Azərbaycan dilindən İngilis dilinə tərcümə etmək istıyirsizsə '/en' seçiminə, \n İstənilən dildən Azərbaycan dilinə tərcümə etmək istəsəz isə '/tercume' seçiminə tıklayın.")
 
-@bot.message_handler(commands=['en'])
-def message_aztoen(message):
-msg = bot.reply_to(message, "Tərcümə ediləcək mətni yazın...") 
-        bt_help.set_handler('en','az')
-        bot.register_next_step_handler(msg,do_trans)
-
-def do_trans(message):
-    try:
-        ldest,lsrc = bt_help.get_handler()
-        translated = translator.translate(message.text,dest=ldest,src=lsrc)
-        bot.send_message(message.from_user.id,translated.text)
-    except Exception  as e:
-        bot.send_message(message.from_user.id,e)
 
 
 
