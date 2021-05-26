@@ -7,10 +7,7 @@ bot = telebot.TeleBot(TOKEN)
 @bot.message_handler(commands=["start"])
 
 def start(message):
-      bot.send_message(message.chat.id, "Salam👋 Xoşgəldiniz :) 
-Botdan istifadə etmək üçün '/' işarəsinə klikləyə bilərsiz.
-Azərbaycan dilindən İngilis dilinə tərcümə etmək istıyirsizsə '/en' seçiminə, 
-İstənilən dildən Azərbaycan dilinə tərcümə etmək istəsəz isə '/tercume' seçiminə tıklayın.")
+      bot.send_message(message.chat.id, "Salam👋 Xoşgəldiniz :) Botdan istifadə etmək üçün '/' işarəsinə klikləyə bilərsiz. Azərbaycan dilindən İngilis dilinə tərcümə etmək istıyirsizsə '/en' seçiminə, İstənilən dildən Azərbaycan dilinə tərcümə etmək istəsəz isə '/tercume' seçiminə tıklayın.")
 
 
 @bot.message_handler(commands=["hello", "hi"])
