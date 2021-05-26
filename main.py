@@ -1,3 +1,5 @@
+#Deməli belə 1.Dil fayllarını daxil elə. 2.Buton qoy
+
 #daxil elədik
 
 import telebot
