@@ -1,2 +1,4 @@
 pytelegrambotapi
 googletrans
+​​requests
+​python-telegram-bot
