@@ -45,7 +45,7 @@ def error(bot, update):
 
 
 def main():
-    updater = Updater("KEY")
+    updater = Updater("1801568916:AAEToeCtmwjKkuU2mv9Eb9ff0xF9w4vUUvI")
 
     dp = updater.dispatcher
     dp.add_handler(CommandHandler("start", start))
